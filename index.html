@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="#"><img src="./assets/icons/settings.png" alt="logo" width="50px"
+          height="50px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-4" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item me-4">
+            <a class="nav-link active" aria-current="page" href="#" style="color: red;">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#services">Service</a>
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Our Services</a></li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </ul>
+          </li>
+          <button type="button" class="btn btn-success me-4 px-4">Contact Us</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="slider">
+    <div class="icons icon1slider" onclick="prevSlide()">
+      <img src="./assets/icons/left-arrow.png" alt="arrow" />
+    </div>
+    <div class="icons icon2slider" onclick="nextSlide()">
+      <img src="./assets/icons/right.png" alt="arrow" />
+    </div>
+    <div class="slider-inner">
+      <div class="slider-wrapper" style="background: url(./assets/images/slide-01.jpg);">
+        <div class="container-fluid fluid-slider">
+          <div class="row">
+            <div class="col">
+              <div class="header-text">
+                <div id="header-text1">
+                  <h1>Get <em>ready</em> for your business<br>&amp; upgrade <em>all aspects</em></h1>
+                </div>
+                <div class="div-dec"></div>
+                <br>
+                <div id="header-text2"> Mexant HTML5 Template is provided for free of charge. This layout is based on
+                  Boostrap 5
+                  CSS
+                  framework. <br>Anyone can download and edit for any professional website.<br> Thank you for visiting
+                  TemplateMo website.</div>
+                <div class="buttons">
+                  <div class="green-button btn1">
+                    <a href="#">Discover More</a>
+                  </div>
+                  <div class="orange-button btn1">
+                    <a href="#">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-wrapper" style="background: url(./assets/images/slide-02.jpg);">
+        <div class="container-fluid fluid-slider">
+          <div class="row">
+            <div class="col">
+              <div class="header-text">
+                <div id="header-text">
+                  <h2><em>Digital</em> Currency for you <br>&amp; Best <em>Crypto</em> Tips</h2>
+                </div>
+                <div class="div-dec"></div>
+                <br>
+                <div id="header-text">You will see a bunch of free CSS templates when you search on Google. TemplateMo
+                  website is probably the best one because it is 100% free. It does not ask you anything in return. You
+                  have a total freedom to use any template for any purpose
+                </div>
+                <div class="buttons">
+                  <div class="green-button btn1">
+                    <a href="#">Discover More</a>
+                  </div>
+                  <div class="orange-button btn1">
+                    <a href="#">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-wrapper" style="background: url(./assets/images/slide-03.jpg);">
+        <div class="container-fluid fluid-slider">
+          <div class="row">
+            <div class="col">
+              <div class="header-text">
+                <div id="header-text">
+                  <h2>Best One in Town<br>&amp; Crypto <em>Services</em></h2>
+                </div>
+                <div class="div-dec"></div>
+                <br>
+                <div id="header-text">When you browse through different tags on TemplateMo website, you can see a
+                  variety of CSS templates which are responsive website designs for different individual needs. Please
+                  tell your friends about our website. Thank you.</div>
+                <div class="buttons">
+                  <div class="green-button btn1">
+                    <a href="#">Discover More</a>
+                  </div>
+                  <div class="orange-button btn1">
+                    <a href="#">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="services">
+    <div class="container-fluid">
+      <div class="row section-row">
+        <div class="col col-lg-6 section-col" data-aos="flip-up">
+          <div class="service-item">
+            <div><i class="fas fa-archive"></i></div>
+            <div>
+              <h4>CSS Templates</h4>
+              <p>TemplateMo website is the best for you to explore and download free website templates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 section-col" data-aos="flip-up">
+          <div class="service-item">
+            <div> <i class="fas fa-cloud"></i></div>
+            <div>
+              <h4>HTML5 Web Pages</h4>
+              <p>Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 section-col" data-aos="zoom-in">
+          <div class="service-item">
+            <div><i class="fas fa-charging-station"></i></div>
+            <div>
+              <h4>Responsive Designs</h4>
+              <p>All of our CSS templates are 100% free to use for commercial or business websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 section-col" data-aos="zoom-in">
+          <div class="service-item">
+            <div> <i class="fas fa-suitcase"></i></div>
+            <div>
+              <h4>Mobile and Tablet ready!</h4>
+              <p>Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 section-col" data-aos="fade-left">
+          <div class="service-item">
+            <div> <i class="fas fa-archway"></i></div>
+            <div>
+              <h4>Fast Customer Support</h4>
+              <p>Do not be hesitated to contact us if you have any question or concern about our templates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-6 section-col" data-aos="fade-left">
+          <div class="service-item">
+            <div> <i class="fas fa-puzzle-piece"></i></div>
+            <div>
+              <h4>Fully Customizable</h4>
+              <p>If you have any idea or suggestion about new templates, feel free to let us know.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section2">
+    <div class="container">
+      <div class="row section2-row">
+        <div class="col section2-col">
+          <h1>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h1>
+        </div>
+        <div class="col section2-col col2">
+          <div>
+            <a href="#" style="background-color: #43ba7f;">Descover more</a>
+          </div>
+          <div>
+            <a href="#" style="background-color: #ff511a;">contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <div class="container-fluid">
+      <div class="row about-row">
+        <br>
+        <div class="col col-12 first">
+          <div class="section-heading">
+            <h6 style="color: red;">About Us</h6>
+            <h4>Know Us Better</h4>
+          </div>
+        </div>
+        <br><br>
+        <div class="col col-12 second mt-4">
+          <div class="left" data-aos="fade-right">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 about-heading">
+                  <div class="menu">
+                    <div class="active gradient-border" onclick="next(0)"><span>Web Design</span></div>
+                    <div class="gradient-border" onclick="next(1)"><span>Graphics</span></div>
+                    <div class="gradient-border" onclick="next(2)"><span>Web Coding</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-12 about-list">
+                  <div class="list" id="list">
+                    <div class="main-list">
+                      <span class="title">Project Title</span>
+                      <span class="title">Budget</span>
+                      <span class="title">Deadline</span>
+                      <span class="title">Client</span>
+                    </div>
+                    <hr>
+                    <div class="list-item ">
+                      <span class="item item-title">Website Redesign</span>
+                      <span class="item">$1,500 to $2,200</span>
+                      <span class="item">2022 Dec 12</span>
+                      <span class="item">Web Biz</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Website Renovation</span>
+                      <span class="item">$2,500 to $3,600</span>
+                      <span class="item">2022 Dec 10</span>
+                      <span class="item">Online Ads</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Marketing Plan</span>
+                      <span class="item">$2,500 to $4,200</span>
+                      <span class="item">2022 Dec 8</span>
+                      <span class="item">Web Biz</span>
+                    </div>
+                    <hr>
+                    <div class="list-item last-item">
+                      <span class="item item-title">All-new Website</span>
+                      <span class="item">$3,000 to $6,600</span>
+                      <span class="item">2022 Dec 2</span>
+                      <span class="item">Web Presence</span>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="list" id="list">
+                    <div class="main-list">
+                      <span class="title">Project Title</span>
+                      <span class="title">Budget</span>
+                      <span class="title">Deadline</span>
+                      <span class="title">Client</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Graphics Redesign</span>
+                      <span class="item">$500 to $800</span>
+                      <span class="item">2022 Nov 24</span>
+                      <span class="item">Media One</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Digital Graphics</span>
+                      <span class="item">$1,500 to $3,000</span>
+                      <span class="item">2022 Nov 18</span>
+                      <span class="item">Second Media</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Marketing Plan</span>
+                      <span class="item">$2,500 to $4,200</span>
+                      <span class="item">2022 Dec 8</span>
+                      <span class="item">Web Biz</span>
+                    </div>
+                    <hr>
+                    <div class="list-item last-item">
+                      <span class="item item-title">New Artworks</span>
+                      <span class="item">$2,200 to $4,400</span>
+                      <span class="item">2022 Nov 10</span>
+                      <span class="item">Artwork Push</span>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="list" id="list">
+                    <div class="main-list">
+                      <span class="title">Project Title</span>
+                      <span class="title">Budget</span>
+                      <span class="title">Deadline</span>
+                      <span class="title">Client</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Website Redesign</span>
+                      <span class="item">$1,500 to $2,200</span>
+                      <span class="item">2022 Dec 12</span>
+                      <span class="item">Web Biz</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">Backend Coding</span>
+                      <span class="item">$2,000 to $5,000</span>
+                      <span class="item">2022 Nov 28</span>
+                      <span class="item">PHP MySQL</span>
+                    </div>
+                    <hr>
+                    <div class="list-item">
+                      <span class="item item-title">New Web App</span>
+                      <span class="item">$1,500 to $3,000</span>
+                      <span class="item">2022 Nov 18</span>
+                      <span class="item">Python Programming</span>
+                    </div>
+                    <hr>
+                    <div class="list-item last-item">
+                      <span class="item item-title">Frontend Interactions</span>
+                      <span class="item">$3,000 to $6,000</span>
+                      <span class="item">2022 Nov 10</span>
+                      <span class="item">JavaScripts</span>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 right" data-aos="fade-left">
+            <div class="right-content">
+              <h4>Please tell us about your idea and how you want it to be</h4>
+              <br><br>
+              <p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the
+                template ZIP file on any other template websites.<br><br><br>Thank you for downloading and using our
+                templates. Please tell your friends about our website.</p>
+              <br>
+              <div class="green-button">
+                <a href="about-us.html">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <div class="container calculator-container">
+      <div class="row d-flex cal-row">
+        <div class="col-6  cal-left">
+          <img src="./assets/images/calculator-image.png" height="500px" />
+        </div>
+        <div class="col-lg-6 cal-right">
+          <div class="section-heading">
+            <h6 style="color: red;">Your Freedom</h6>
+            <h4 style="color: #fff;">Get a Financial Plan</h4>
+          </div>
+          <br>
+          <form id="calculate" action="" method="get">
+            <div class="row" data-aos="fade-up-right">
+              <div class="col-lg-6 mt-2">
+                <fieldset>
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="name" name="name" id="name" class="form-control" placeholder="" autocomplete="on"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 mt-2">
+                <fieldset>
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="text" name="email" id="email" class="form-control" pattern="[^ @]*@[^ @]*" placeholder=""
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12 mt-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="subject" name="subject" class="form-control" id="subject" placeholder="" autocomplete="on">
+              </div>
+              <div class="col-lg-12 mt-4">
+                <fieldset>
+                  <label for="chooseOption" class="form-label">Your Reason</label>
+                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption"
+                    onchange="this.form.click()">
+                    <option selected>Choose an Option</option>
+                    <option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
+                    <option value="Financial Control">Financial Control</option>
+                    <option value="Yearly Profit">Yearly Profit</option>
+                    <option value="Crypto Investment">Crypto Investment</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-12 mt-4">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="btn btn-danger">Submit Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+        <div class="col-lg-6 offset-lg-3" style="padding-bottom: 1rem ;">
+          <div class="section-heading">
+            <h6 style="color: red;">Testimonials</h6>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1 test mySwiper">
+          <div class="owl-testimonials owl-carousel swiper-wrapper" style="position: relative; z-index: 5;">
+            <div class="item swiper-slide">
+              <div class="left-section">
+                <i class="fa fa-quote-left"></i>
+                <br>
+                <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam
+                  volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula.
+                  Aliquam vel scelerisque elit.”</p>
+                <br>
+                <h4 class="name">David Eigenberg</h4>
+                <span class="job">CEO of Mexant</span>
+              </div>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="image">
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="left-section">
+                <i class="fa fa-quote-left"></i>
+                <br>
+                <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam
+                  volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula.
+                  Aliquam vel scelerisque elit.”</p>
+                <br>
+                <h4 class="name">David Eigenberg</h4>
+                <span class="job">CEO of Mexant</span>
+              </div>
+              <div class="right-image">
+                <img src="assets/images/pro1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="left-section">
+                <i class="fa fa-quote-left"></i>
+                <br>
+                <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam
+                  volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula.
+                  Aliquam vel scelerisque elit.”</p>
+                <br>
+                <h4 class="name">David Eigenberg</h4>
+                <span class="job">CEO of Mexant</span>
+              </div>
+              <div class="right-image">
+                <img src="assets/images/pro2.jpg" alt="image">
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="left-section">
+                <i class="fa fa-quote-left"></i>
+                <br>
+                <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam
+                  volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula.
+                  Aliquam vel scelerisque elit.”</p>
+                <br>
+                <h4 class="name">David Eigenberg</h4>
+                <span class="job">CEO of Mexant</span>
+              </div>
+              <div class="right-image">
+                <img src="assets/images/pro3.jpg" alt="image">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mb-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.
+
+            <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com"
+              target="_blank">TemplateMo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/scroll.js"></script>
+  <script src="./assets/js/slide2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    AOS.init({
+      offset: 140,
+      delay: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+</body>
+
+</html>
